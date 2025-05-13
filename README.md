@@ -8,3 +8,11 @@ The connection string `guest:guest@localhost:5672` is used to connect to an AMQP
 * second `guest`: The password for authentication.
 * `localhost`: The hostname or IP address of the AMQP server.
 * `5672`: The port number that the AMQP server is listening on.
+
+---
+
+### Why the total number of queue is 22?
+
+Because there's a delay in the code for about 1 second after quickly ran `cargo run` 5 times in publisher directory
+
+![RabbitMQ Management](static/img/Screenshot%202025-05-13%20at%2013-41-03%20RabbitMQ%20Management.png)
