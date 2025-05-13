@@ -16,3 +16,11 @@ The connection string `guest:guest@localhost:5672` is used to connect to an AMQP
 Because there's a delay in the code for about 1 second after quickly ran `cargo run` 5 times in publisher directory
 
 ![RabbitMQ Management](static/img/Screenshot%202025-05-13%20at%2013-41-03%20RabbitMQ%20Management.png)
+
+---
+
+### Why is now faster after ran 3 subscriber instance?
+
+Because we now have 3 queues instead of 1, that mean it can be spread the waiting time making it faster to deal with
+
+![RabbitMQ Management](static/img/Screenshot%202025-05-13%20at%2014-03-14%20RabbitMQ%20Management.png)
